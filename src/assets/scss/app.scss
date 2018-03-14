@@ -1,4 +1,39 @@
 @import 'settings';
 @import 'foundation-emails';
 
-@import 'template/template';
+ul {
+    margin-top: 0;
+    padding-left: 20px;
+}
+p {
+    margin-bottom: 14px;
+}
+
+.bg-dark {
+    background: $dark-gray;
+    h1, h2, h3, h4, h5, h6 {
+        color: $light-gray;
+        margin-bottom: 0;
+    }
+    p {
+        color: $light-gray;
+    }
+    h1, h2, h3, h4 {
+        font-weight: 300;
+    }
+
+    // Add a border to the listing of the dates
+    .month {
+        border-right: 1px solid $light-gray
+    }
+    @media only screen and (max-width: #{$global-breakpoint}) { 
+        .month { 
+            border-right: none; 
+        }
+    }
+
+    // Add the little bottom border for headers
+    table.header {
+        border-bottom: 1px solid $light-gray;
+    }
+}

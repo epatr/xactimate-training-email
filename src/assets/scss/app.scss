@@ -8,6 +8,9 @@ ul {
 }
 p {
     margin-bottom: 14px;
+    &.small {
+        font-size: 10px;
+    }
 }
 td {
     word-wrap: unset;
@@ -34,7 +37,7 @@ td {
         border-right: 1px solid $light-gray
     }
     // I guess Foundation for Emails isn't mobile-first...
-    @media only screen and (max-width: #{$global-breakpoint}) { 
+    @media only screen and (max-width: $global-breakpoint) { 
         .month { border-right: none; }
     }
 
@@ -42,4 +45,8 @@ td {
     table.header {
         border-bottom: 1px solid $light-gray;
     }
+}
+
+.callout .lead {
+    margin-bottom: 0;
 }

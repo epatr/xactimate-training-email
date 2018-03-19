@@ -47,6 +47,15 @@ td {
     }
 }
 
-.callout .lead {
-    margin-bottom: 0;
+.callout {
+
+    .callout-dark {
+        background-color: $dark-gray;
+        border-color: $black;
+        color: $light-gray;
+        .lead {
+            margin-bottom: 0;
+            color: $light-gray;
+        }
+    }
 }

@@ -21,6 +21,7 @@ td {
 // Styling the inverted portion of the email
 .bg-dark {
     background: $dark-gray;
+    color: $light-gray;
     h1, h2, h3, h4 {
         color: $light-gray;
         margin-bottom: 0;
@@ -67,4 +68,11 @@ td {
 .text-warning {
     color: $warning-color;
     font-weight: bold;
+}
+
+
+
+// why padding on top?
+th.columns, th.column {
+    padding-bottom: 0;
 }
